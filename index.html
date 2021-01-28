@@ -1,13 +1,13 @@
 <html lang="en">
 
 <head>
-    <title>Jocke stite</title>
+    <title>WIP</title>
     <meta charset="UTF-8">
 </head>
 
 <body>
     <header>
-        <h1>Joakim Malmberg</h1>
+        <h1>WIP</h1>
         <h3 class="inline">links ❯</h3>
         <a href="#github">github</a>
         <a href="#linkdin">linkdin</a>
@@ -17,108 +17,87 @@
     <main role="main">
         <h2>Lightweight and fast</h2>
         <p>
-         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-         Voluptates laudantium odit illo quae rerum cumque delectus dignissimos,
-         distinctio vitae ea error accusantium aut accusamus mollitia blanditiis 
-         excepturi quaerat, pariatur architecto.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Voluptates laudantium odit illo quae rerum cumque delectus dignissimos,
+            distinctio vitae ea error accusantium aut accusamus mollitia blanditiis
+            excepturi quaerat, pariatur architecto.
         </p>
-
-        <p style="color:#272822">darker gray</p>
-        <p style="color:#49483E">dark gray</p>
-        <p style="color:#75715E">gray</p>
-        <p style="color:#66D9EF">cyan</p>
-        <p style="color:#A6E22E">green</p>
-        <p style="color:#AE81FF">purple</p>
-        <p style="color:#E6DB74">yellow</p>
-        <p style="color:#F92672">magenta</p>
-        <p style="color:#FD971F">orange</p>
-        <p style="color:#F8F8F0">white</p>
-
-        <div class="highlight" style="background: #181818"><pre style="line-height: 125%;">
-<span style="color: #66d9ef">namespace</span> <span style="color: #f8f8f2">Tinga.Responses</span>
-<span style="color: #f8f8f2">{</span>
-    <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">ErrorBase</span>
-    <span style="color: #f8f8f2">{</span>
-        <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">string</span> <span style="color: #f8f8f2">Type</span> <span style="color: #f8f8f2">{</span> <span style="color: #66d9ef">get</span><span style="color: #f8f8f2">;</span> <span style="color: #66d9ef">set</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">}</span>
-        <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">Status</span> <span style="color: #f8f8f2">{</span> <span style="color: #66d9ef">get</span><span style="color: #f8f8f2">;</span> <span style="color: #66d9ef">set</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">}</span>
-        <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">string</span> <span style="color: #f8f8f2">Title</span> <span style="color: #f8f8f2">{</span> <span style="color: #66d9ef">get</span><span style="color: #f8f8f2">;</span> <span style="color: #66d9ef">set</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">}</span>
-    <span style="color: #f8f8f2">}</span>
-<span style="color: #f8f8f2">}</span>
-</pre></div>
     </main>
 </body>
 
 </html>
 
 <style>
+    :root {
+        --article-max-width: 50rem;
+        --darker-gray: #272822;
+        --dark-gray: #49483E;
+        --gray: #75715E;
+        --cyan: #66D9EF;
+        --green: #A6E22E;
+        --purple: #AE81FF;
+        --yellow: #E6DB74;
+        --magenta: #F92672;
+        --orange: #FD971F;
+        --white: #F8F8F0;
+    }
 
-:root {
---article-max-width: 50rem;
---darker-gray:#272822;
---dark-gray:#49483E;
---gray:#75715E;
---cyan:#66D9EF;
---green:#A6E22E;
---purple:#AE81FF;
---yellow:#E6DB74;
---magenta:#F92672;
---orange:#FD971F;
---white:#F8F8F0;
-}
+    .inline {
+        display: inline;
+    }
 
-.inline {
-    display:inline;
-}
+    a {
+        color: var(--cyan);
+        font-size: 1.5rem
+    }
 
-a {
-    color: var(--cyan);
-    font-size: 1.5rem
+    a:visited {
+        color: var(--purple)
+    }
 
-}
-a:visited {
-    color:var(--purple)
-}
+    header {
+        padding-top: 2rem;
+    }
 
-header {
-    padding-top: 2rem;
-}
+    header,
+    main {
+        max-width: var(--article-max-width);
+        margin: 0 auto;
+    }
 
-header, main {	
-  max-width: var(--article-max-width);	
-  margin: 0 auto;	
-}
+    hr {
+        max-width: var(--article-max-width);
+        border: 1px solid var(--gray);
+        margin-top: 1rem;
+    }
 
-hr {
-    max-width: var(--article-max-width);
-    border: 1px solid var(--gray);
-    margin-top: 1rem;
-}
+    body {
+        font-family: 'Lucida Console';
+        background-color: var(--darker-gray);
+        color: var(--white)
+    }
 
-body {
-  font-family: 'Lucida Console';
-  background-color: var(--darker-gray);
-  color: var(--white)
-}
+    h1 {
+        font-size: 3rem;
+        color: var(--magenta)
+    }
 
-h1 {
-  font-size: 3rem;
-  color: var(--magenta)
-}
+    h2 {
+        font-size: 2rem;
+        color: var(--yellow)
+    }
 
-h2 {
-  font-size: 2rem;
-  color: var(--yellow)
-}
+    h3 {
+        font-size: 1.5rem;
+        color: var(--orange)
+    }
 
-h3 {
-  font-size: 1.5rem;
-  color: var(--orange)
-}
-ul {
-    display:block;
-    overflow:hidden;
-}
-li {
-    display: inline;
-}
+    ul {
+        display: block;
+        overflow: hidden;
+    }
+
+    li {
+        display: inline;
+    }
 </style>
